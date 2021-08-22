@@ -1,0 +1,112 @@
+configuration {
+	font:			"Iosevka Nerd Font 20";
+	show-icons:		true;
+	icon-theme:		"Papirus";
+	display-drun:		"";
+	drun-display-format:	"{name}";
+	disable-history:	true;
+	fullscreen:		false;
+	hide-scrollbar:		true;
+	sidebar-mode:		true;
+}
+
+window {
+	transparency:		"none";
+	background-color:	#121212;
+	text-color:		#FFFFFF;
+	border:			0px;
+	border-color:		#121212;
+	border-radius:		0px;
+	width:			290px;
+	location:		northwest;
+	x-offset:		-10;
+	y-offset:		30;
+}
+
+prompt {
+	enabled:		false;
+	padding:		0px 0px 0px 5px;
+	background-color:	#00000000;
+	text-color:		#FFFFFF;
+}
+
+textbox-prompt-colon {
+        padding:                0px;
+        background-color:       #FF0000;
+        text-color:             #FFFFFF;
+        expand:                 false;
+        str:                    " ";
+        font:                   "feather 1";
+}
+
+entry {
+	background-color:	#00000000;
+	text-color:		#000000;
+	placeholder-color:	#000000;
+	expand:			false;
+	horizontal-align:	0;
+	placeholder:		" ";
+	padding:		0px;
+	blink:			false;
+}
+
+inputbar {
+	children:		[ textbox-prompt-colon, prompt ];
+	background-color:	#00000000;
+	text-color:		#000000;
+	expand:			false;
+	border:			0px 0px 0px 0px;
+	border-radius:		0px;
+	border-color:		#000000;
+	margin:			0px;
+	padding:		0px;
+}
+
+listview {
+	background-color:	#121212;
+	padding:		0px;
+	columns:		3;
+	lines:			1;
+	spacing:		0px;
+	cycle:			false;
+	dynamic:		false;
+	layout:			vertical;
+}
+
+mainbox {
+	background-color:	#121212;
+	border:			0px;
+	border-radius:		0px;
+	border-color:		#000000;
+	children:		[ inputbar, listview ];
+	spacing:		0px;
+	padding:		0px;
+}
+
+element {
+	background-color:	#00000000;
+	text-color:		#FFFFFF;
+	orientation:		horizontal;
+	border-radius:		0px;
+	padding:		10px 0px;
+}
+
+element-icon {
+	size:			0px;
+	border:			0px;
+}
+
+element-text {
+	expand:			true;
+	horizontal-align:	0;
+	vertical-align:		0;
+	margin:			0px;
+}
+
+element selected {
+	background-color:	#212121;
+	text-color:		#FFFFFF;
+	border:			0px;
+	border-radius:		0px;
+	border-color:		#000000;
+}
