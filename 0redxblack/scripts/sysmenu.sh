@@ -4,11 +4,11 @@ uptime=$(uptime -p | sed -e 's/up //g')
 rofi_command="rofi -theme ~/.config/polybar/scripts/themes/sysmenu.rasi"
 
 # Options
-shutdown=" "
-reboot=" "
-lock=" "
-suspend=" "
-logout=" "
+shutdown=" "
+reboot=" "
+lock=" "
+suspend=" "
+logout=" "
 
 # Variable passed to rofi
 options="$suspend\n$reboot\n$shutdown"
