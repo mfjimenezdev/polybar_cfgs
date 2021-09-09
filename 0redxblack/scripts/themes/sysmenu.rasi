@@ -16,10 +16,10 @@ window {
 	text-color:		#FFFFFF;
 	border:			0px;
 	border-color:		#121212;
-	border-radius:		0px;
-	width:			290px;
+	border-radius:		0 0 8px 0;
+	width:			230px;
 	location:		northwest;
-	x-offset:		-10;
+	x-offset:		0;
 	y-offset:		30;
 }
 
@@ -32,7 +32,7 @@ prompt {
 
 textbox-prompt-colon {
         padding:                0px;
-        background-color:       #FF0000;
+        background-color:       #00000000;
         text-color:             #FFFFFF;
         expand:                 false;
         str:                    " ";
@@ -78,7 +78,7 @@ mainbox {
 	border:			0px;
 	border-radius:		0px;
 	border-color:		#000000;
-	children:		[ inputbar, listview ];
+	children:		[ listview ];
 	spacing:		0px;
 	padding:		0px;
 }
@@ -100,7 +100,9 @@ element-text {
 	expand:			true;
 	horizontal-align:	0;
 	vertical-align:		0;
-	margin:			0px;
+	margin:			0 0 0 23;
+	background-color:	inherit;
+	text-color:		inherit;
 }
 
 element selected {
